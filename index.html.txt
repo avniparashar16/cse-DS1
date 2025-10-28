@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<HEAD>
+<title>Calendar October 2025</title>
+
+<body>
+table.calendar{border.collapse:collapse:width:100%:max-width:800px}
+table.Calendar caption{font-size:1.2rem ;margin-bottom:8px}
+table.calendar th, table.calendar td{border:1px solid #bbb; padding:8px; vertical-align:top ; height:90px}
+table.calendar thead th {background :#f0f0f0}
+.date-number{font weight:700;margin bottom:6px, display:block}
+.muted color=#666{font-size=0.9px}
+
+table.inner{width:100%; border-collapse:collapse; margin-top:6px ; display:block}
+</html>
+
