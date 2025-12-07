@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+
+<style>
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        background: rgb(224, 112, 64);
+        color: white;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .image-box {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .image-box img {
+        width: 300px; 
+        height: auto;
+        border-radius: 12px;
+    }
+     @media (max-width: 600px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: #444;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .nav-links.show {
+            display: flex; 
+        }
+    
+    }
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar">
+    <div class="logo">Shoppify</div>
+
+    <div class="nav-links" id="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart 🛒</a>
+        <a href="#">Wishlist</a>
+    </div>
+
+</nav>
+
+<div class="image-box">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/019/315/small/logo-bag-design-online-shopping-vector.jpg" alt="Shopping Image">
+</div>
+
+</body>
+</html>
